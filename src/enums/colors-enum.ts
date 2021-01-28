@@ -1,4 +1,4 @@
-export enum Colors {
+export enum ColorsEnum {
   aqua = "#00FFFF",
   black = "#000000",
   blue = "#0000FF",
