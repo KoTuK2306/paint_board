@@ -1,6 +1,6 @@
-export enum colors {
+export enum Colors {
   aqua = "#00FFFF",
-  black = "000000",
+  black = "#000000",
   blue = "#0000FF",
   fuchsia = "#FF00FF",
   gray = "#808080",
@@ -13,6 +13,6 @@ export enum colors {
   red = "#FF0000",
   silver = "#C0C0C0",
   tan = "#D2B48C",
-  white = "FFFFFF",
+  white = "#FFFFFF",
   yellow = "#FFFF00",
-}
+};
