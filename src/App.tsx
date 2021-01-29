@@ -1,9 +1,4 @@
-import React from 'react';
-import './App.css';
-import Header from './header/header';
+import { FC } from 'react';
+import { Header } from './components/header/header';
 
-function App() {
-  return <Header />;
-}
-
-export default App;
+export const App: FC = () => <Header />;

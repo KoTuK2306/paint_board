@@ -1,14 +1,14 @@
-import React from 'react';
-import { Styles } from './header.module';
-import { Colors } from '../constants/colors';
+import { FC } from 'react';
+import { Colors } from '../../constants';
+import { Styles } from './header.style';
 
-function Header() {
+export const Header: FC = () => {
   const classes = Styles(Colors);
   return (
     <div className={classes.header}>
       <div className={`${classes.colorPanel} ${classes.headerEl}`}>
-        {Object.values(Colors).map(() => (
-          <div className={classes.color} />
+        {Object.values(Colors).map((color) => (
+          <div className={`${classes.color} ${Styles({ color }).color}`} />
         ))}
       </div>
       <div className={classes.headerEl} />
@@ -16,6 +16,4 @@ function Header() {
       <div className={classes.headerEl} />
     </div>
   );
-}
-
-export default Header;
+};
