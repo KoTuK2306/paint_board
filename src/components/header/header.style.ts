@@ -1,6 +1,17 @@
 import { createUseStyles } from 'react-jss';
 
-import { Colors } from '../../constants/index';
+import { Colors } from '../../constants';
+
+export const ColorsStyles = createUseStyles({
+  color: {
+    height: 14,
+    width: 14,
+    border: `1px solid ${Colors.black}`,
+    borderRadius: 6,
+    background: ({ color }) => color,
+    cursor: 'pointer',
+  },
+});
 
 export const Styles = createUseStyles({
   header: {
@@ -10,17 +21,9 @@ export const Styles = createUseStyles({
     gridTemplateColumns: 'repeat(4, 25%)',
     alignContent: 'center',
   },
-  headerEl: {
+  section: {
     height: 36,
     borderRight: `1px solid ${Colors.white}`,
-  },
-  color: {
-    height: 14,
-    width: 14,
-    border: `1px solid ${Colors.black}`,
-    borderRadius: 6,
-    background: ({ color }) => color,
-    cursor: 'pointer',
   },
   colorPanel: {
     display: 'grid',
