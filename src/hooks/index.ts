@@ -1,2 +1,1 @@
-export { useBrowserResize } from './use-browser-resize';
-export { useSizeBrowser } from './use-size-browser';
+export { useResizeBrowser } from './use-resize-browser';

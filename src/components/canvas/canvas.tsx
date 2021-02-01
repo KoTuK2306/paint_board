@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { fromEvent } from 'rxjs';
 import { map, pairwise, switchMap, takeUntil } from 'rxjs/operators';
 
-import { useSizeBrowser } from 'hooks';
+import { useResizeBrowser } from 'hooks';
 import { selectColor } from 'slices';
 import { Position } from './position';
 import { drawLine } from './draw-line';
@@ -12,7 +12,7 @@ import { Styles } from './canvas.style';
 
 export const Canvas: FC = () => {
   const classes = Styles();
-  const { browserHeight, browserWidth } = useSizeBrowser();
+  const { browserHeight, browserWidth } = useResizeBrowser();
   const color = useSelector(selectColor);
   const ref = useRef<HTMLCanvasElement | null>(null);
 
