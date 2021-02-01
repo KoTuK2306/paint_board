@@ -1,5 +1,10 @@
 import { FC } from 'react';
 
-import { Header } from './components';
+import { Header, Canvas } from './components';
 
-export const App: FC = () => <Header />;
+export const App: FC = () => (
+  <>
+    <Header />
+    <Canvas />
+  </>
+);
