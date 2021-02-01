@@ -1,9 +1,10 @@
 import { Position } from './position';
 
-export const drawLine = (cx: CanvasRenderingContext2D, [prev, next]: Position[]): void => {
-  cx.beginPath();
+export const drawLine = (ctx: CanvasRenderingContext2D, [prev, next]: Position[], color: string): void => {
+  ctx.beginPath();
 
-  cx.moveTo(prev.x, prev.y);
-  cx.lineTo(next.x, next.y);
-  cx.stroke();
+  ctx.moveTo(prev.x, prev.y);
+  ctx.lineTo(next.x, next.y);
+  ctx.strokeStyle = color;
+  ctx.stroke();
 };

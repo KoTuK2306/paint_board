@@ -1,8 +1,10 @@
 import { FC, useEffect, useRef } from 'react';
+import { useSelector } from 'react-redux';
 import { fromEvent } from 'rxjs';
 import { map, pairwise, switchMap, takeUntil } from 'rxjs/operators';
 
 import { useSizeBrowser } from 'hooks';
+import { selectColor } from 'slices';
 import { Position } from './position';
 import { drawLine } from './draw-line';
 
@@ -11,6 +13,7 @@ import { Styles } from './canvas.style';
 export const Canvas: FC = () => {
   const classes = Styles();
   const { browserHeight, browserWidth } = useSizeBrowser();
+  const color = useSelector(selectColor);
   const ref = useRef<HTMLCanvasElement | null>(null);
 
   useEffect(() => {
@@ -38,9 +41,9 @@ export const Canvas: FC = () => {
 
       mousedown$
         .pipe(switchMap(() => points$.pipe(takeUntil(mouseout$), takeUntil(mouseup$))))
-        .subscribe((value) => drawLine(ctx, value));
+        .subscribe((value) => drawLine(ctx, value, color));
     }
-  }, []);
+  }, [color]);
 
   return (
     <canvas ref={ref} className={classes.canvas} width={`${browserWidth - 2}px`} height={`${browserHeight - 38}px`}>
