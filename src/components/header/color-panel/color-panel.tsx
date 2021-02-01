@@ -2,7 +2,7 @@ import { FC } from 'react';
 import classnames from 'classnames';
 
 import { Styles, ColorsStyles } from './color-panel.style';
-import { Colors } from '../../constants';
+import { Colors } from '../../../constants';
 
 export const ColorPanel: FC = () => {
   const classes = Styles();

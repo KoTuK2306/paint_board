@@ -1,2 +1,2 @@
 export { Header } from './header';
-export { ColorPanel } from './color-panel';
+export { ColorPanel } from './header/color-panel';

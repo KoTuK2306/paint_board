@@ -1,6 +1,6 @@
 import { createUseStyles } from 'react-jss';
 
-import { Colors } from '../../constants/colors';
+import { Colors } from '../../../constants/colors';
 
 export const ColorsStyles = createUseStyles({
   color: {
@@ -8,7 +8,7 @@ export const ColorsStyles = createUseStyles({
     width: 14,
     border: `1px solid ${Colors.black}`,
     borderRadius: 6,
-    background: ({ color }) => color,
+    background: ({ color }: Record<string, string>) => color,
     cursor: 'pointer',
   },
 });

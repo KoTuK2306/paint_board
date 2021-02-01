@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { ColorPanel } from '../color-panel';
+import { ColorPanel } from './color-panel';
 import { Styles } from './header.style';
 
 export const Header: FC = () => {
