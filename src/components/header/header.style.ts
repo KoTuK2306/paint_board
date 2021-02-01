@@ -1,7 +1,7 @@
 import { createUseStyles } from 'react-jss';
 import color from 'color';
 
-import { Colors } from '../../constants';
+import { Colors } from 'style-constants';
 
 export const Styles = createUseStyles({
   header: {

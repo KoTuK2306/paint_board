@@ -1,6 +1,6 @@
 import { createUseStyles } from 'react-jss';
 
-import { Colors } from '../../../constants/colors';
+import { Colors } from 'style-constants';
 
 export const ColorsStyles = createUseStyles({
   color: {

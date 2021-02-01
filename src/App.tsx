@@ -1,5 +1,12 @@
 import { FC } from 'react';
+import { Provider } from 'react-redux';
 
-import { Header } from './components';
+import { store } from 'store';
+import { Header, Canvas } from 'components';
 
-export const App: FC = () => <Header />;
+export const App: FC = () => (
+  <Provider store={store}>
+    <Header />
+    <Canvas />
+  </Provider>
+);
