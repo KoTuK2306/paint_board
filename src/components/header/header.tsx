@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { ColorPanel } from './color-panel';
+import { ColorsPanel } from './colors-panel';
 import { Styles } from './header.style';
 
 export const Header: FC = () => {
@@ -8,7 +8,7 @@ export const Header: FC = () => {
 
   return (
     <header className={classes.header}>
-      <ColorPanel />
+      <ColorsPanel />
       <div className={classes.section} />
       <div className={classes.section} />
       <div className={classes.section} />
