@@ -15,7 +15,7 @@ export const Styles = createUseStyles({
     height: 36,
     borderRight: `1px solid ${Colors.white}`,
     '&:last-child': {
-      border: 'none',
+      borderRight: 'none',
     },
   },
 });
