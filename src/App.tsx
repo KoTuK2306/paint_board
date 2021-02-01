@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { Header, Canvas } from './components';
+import { Header, Canvas } from 'components';
 
 export const App: FC = () => (
   <>

@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import classnames from 'classnames';
 
+import { Colors } from 'style-constants';
 import { Styles, ColorsStyles } from './colors-panel.style';
-import { Colors } from '../../../constants';
 
 export const ColorsPanel: FC = () => {
   const classes = Styles();

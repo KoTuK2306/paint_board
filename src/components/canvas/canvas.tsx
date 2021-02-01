@@ -2,7 +2,7 @@ import { FC, useEffect, useRef } from 'react';
 import { fromEvent } from 'rxjs';
 import { map, pairwise, switchMap, takeUntil } from 'rxjs/operators';
 
-import { useSizeBrowser } from '../../hooks';
+import { useSizeBrowser } from 'hooks';
 import { Position } from './position';
 import { drawLine } from './draw-line';
 
