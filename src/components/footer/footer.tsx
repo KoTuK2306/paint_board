@@ -7,7 +7,7 @@ export const Footer: FC = () => {
 
   return (
     <footer className={classes.footer}>
-      <p className={classes.footerText}>© Paint board 2021</p>
+      <p className={classes.footerText}>© Paint board {new Date().getFullYear()}</p>
     </footer>
   );
 };
