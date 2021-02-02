@@ -15,6 +15,7 @@ export const ColorsPanel: FC = () => {
       {Object.values(Colors).map((color) => (
         <button
           onClick={() => dispatch(setColor(color))}
+          key={color}
           type="button"
           className={ColorsStyles({ color }).color}
           aria-label="Select color"
