@@ -14,5 +14,8 @@ export const Styles = createUseStyles({
   section: {
     height: 36,
     borderRight: `1px solid ${Colors.white}`,
+    '&:last-child': {
+      borderRight: 'none',
+    },
   },
 });
