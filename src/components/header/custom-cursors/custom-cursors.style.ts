@@ -3,7 +3,7 @@ import { createUseStyles } from 'react-jss';
 import { Colors } from 'style-constants';
 
 export const Style = createUseStyles({
-  cursorsPanel: {
+  cursors: {
     height: '100%',
     display: 'grid',
     gridTemplateColumns: 'repeat(6, 32px)',

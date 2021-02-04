@@ -2,6 +2,7 @@ import { FC } from 'react';
 
 import { ColorsPanel } from './colors-panel';
 import { CustomCursors } from './custom-cursors';
+
 import { Styles } from './header.style';
 
 export const Header: FC = () => {

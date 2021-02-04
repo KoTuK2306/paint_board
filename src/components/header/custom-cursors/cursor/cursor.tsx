@@ -1,11 +1,11 @@
 import { FC } from 'react';
 
-import { ReactComponent as BlueAnimeCursor } from '../cursor-icons/blueAnimeCursor.svg';
-import { ReactComponent as BlueCursor } from '../cursor-icons/blueCursor.svg';
-import { ReactComponent as BlueEmptyCursor } from '../cursor-icons/blueEmptyCursor.svg';
-import { ReactComponent as GrayTelegramCursor } from '../cursor-icons/grayTelegramCursor.svg';
-import { ReactComponent as PurpleGradientCursor } from '../cursor-icons/purpleGradientCursor.svg';
-import { ReactComponent as YellowCursor } from '../cursor-icons/yellowCursor.svg';
+import { ReactComponent as BlueAnimeCursor } from './assets/blueAnimeCursor.svg';
+import { ReactComponent as BlueCursor } from './assets/blueCursor.svg';
+import { ReactComponent as BlueEmptyCursor } from './assets/blueEmptyCursor.svg';
+import { ReactComponent as GrayTelegramCursor } from './assets/grayTelegramCursor.svg';
+import { ReactComponent as PurpleGradientCursor } from './assets/purpleGradientCursor.svg';
+import { ReactComponent as YellowCursor } from './assets/yellowCursor.svg';
 
 export const Cursors = {
   BlueAnimeCursor,
@@ -20,6 +20,7 @@ export type CursorsType = keyof typeof Cursors;
 
 interface Props {
   cursor: CursorsType;
+  cursors?: string;
   className?: string;
 }
 
